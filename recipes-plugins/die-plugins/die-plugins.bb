@@ -10,7 +10,7 @@ INSANE_SKIP:${PN} = "already-stripped"
 SRC_URI = "\
     gitsm://github.com/DISTRHO/DIE-Plugins.git;protocol=https;branch=main \
 "
-SRCREV="d4c3922368710531b2adbebea292fd277cdc3ba0"
+SRCREV = "d4c3922368710531b2adbebea292fd277cdc3ba0"
 
 PV = "1.1"
 

@@ -10,7 +10,7 @@ SRC_URI = "\
     file://01-filetypes.patch \
     file://02-skip-qt-widgets.patch \
 "
-SRCREV="222df62eb0e968ef5aa859f0d96e5aca705001d5"
+SRCREV = "222df62eb0e968ef5aa859f0d96e5aca705001d5"
 
 PV = "1.1.1"
 

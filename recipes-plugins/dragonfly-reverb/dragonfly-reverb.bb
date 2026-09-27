@@ -28,7 +28,7 @@ SRC_URI = "\
     file://01_optimizations.patch \
     file://02_allow-zero-size-delay.patch \
 "
-SRCREV="582b9c65248023f710ae3245951fff678d38c3a2"
+SRCREV = "582b9c65248023f710ae3245951fff678d38c3a2"
 
 S = "${WORKDIR}/git"
 

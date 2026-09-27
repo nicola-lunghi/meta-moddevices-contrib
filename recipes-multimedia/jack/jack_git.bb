@@ -17,7 +17,7 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 DEPENDS = "libsamplerate0 libsndfile1 readline"
 
 SRC_URI = "\
-    git://github.com/jackaudio/jack2.git \
+    git://github.com/jackaudio/jack2.git;branch=master;protocol=https \
     file://01-cycle_counter_timing.patch \
 "
 SRCREV = "58194d90f4321e0a8a0fbc5708a637e13f77159a"

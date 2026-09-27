@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = ""
 SRC_URI = "\
     git://github.com/moddevices/mod-ttymidi;protocol=https;branch=master \
 "
-SRCREV="512edcc6aab390bdd3627cea005861211cd29d67"
+SRCREV = "512edcc6aab390bdd3627cea005861211cd29d67"
 
 S = "${WORKDIR}/git"
 

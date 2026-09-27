@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = ""
 SRC_URI = "\
     git://github.com/moddevices/lv2bm.git;protocol=https;branch=master \
 "
-SRCREV="ffd35a049c5f609f93460289dae0b319ad297810"
+SRCREV = "ffd35a049c5f609f93460289dae0b319ad297810"
 
 S = "${WORKDIR}/git"
 

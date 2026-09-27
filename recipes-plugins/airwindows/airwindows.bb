@@ -12,7 +12,7 @@ SRC_URI = "\
     git://github.com/hannesbraun/airwindows-lv2.git;protocol=https;branch=master \
     file://01_optimizations.patch \
 "
-SRCREV="9b48123f778e0ed623b0e432695d6b5d32f70638"
+SRCREV = "9b48123f778e0ed623b0e432695d6b5d32f70638"
 
 S = "${WORKDIR}/git"
 

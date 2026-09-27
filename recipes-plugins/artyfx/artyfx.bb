@@ -10,7 +10,7 @@ SRC_URI = "\
     git://github.com/openAVproductions/openAV-ArtyFX.git;protocol=https;branch=master \
     file://01_build-flags.patch \
 "
-SRCREV="3fdeecd081c9a03b3a630d2ed0825674a30c05d5"
+SRCREV = "3fdeecd081c9a03b3a630d2ed0825674a30c05d5"
 
 S = "${WORKDIR}/git"
 

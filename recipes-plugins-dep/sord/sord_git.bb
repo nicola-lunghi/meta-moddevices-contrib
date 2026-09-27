@@ -10,7 +10,7 @@ DEPENDS += "libpcre serd"
 SRC_URI = "\
     git://git.drobilla.net/sord.git;protocol=http;branch=master \
 "
-SRCREV="31ea384f24e12778d6e30cc7a30b0f48f3d50523"
+SRCREV = "31ea384f24e12778d6e30cc7a30b0f48f3d50523"
 
 S = "${WORKDIR}/git"
 

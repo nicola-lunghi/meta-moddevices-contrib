@@ -13,7 +13,7 @@ SRC_URI = "\
     file://01-fix-installation-paths.patch;patchdir=../ \
     file://cabsim.wisdom \
 "
-SRCREV="75876819500a674fb14841e900c12723d21602ef"
+SRCREV = "75876819500a674fb14841e900c12723d21602ef"
 
 S = "${WORKDIR}/git/source"
 

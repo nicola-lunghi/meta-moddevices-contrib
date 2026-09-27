@@ -13,7 +13,7 @@ SRC_URI = "\
     gitsm://github.com/dsheeler/harmonizer.lv2.git;protocol=https;branch=master \
     file://0001-Fixing-shell-command-that-broke-compilation.patch \
 "
-SRCREV="b16e01c71263bd6254df3096eb16c70864a3d6dd"
+SRCREV = "b16e01c71263bd6254df3096eb16c70864a3d6dd"
 
 S = "${WORKDIR}/git"
 

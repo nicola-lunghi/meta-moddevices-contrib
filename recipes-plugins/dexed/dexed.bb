@@ -11,7 +11,7 @@ SRC_URI = "\
     file://01_fix-duplicated-comment.patch \
     file://02_makefile-ignore-ttl-change.patch \
 "
-SRCREV="f3518feb75c6039d94a60b99aff2126bd197296b"
+SRCREV = "f3518feb75c6039d94a60b99aff2126bd197296b"
 
 S = "${WORKDIR}/git"
 

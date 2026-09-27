@@ -10,7 +10,7 @@ SRC_URI = "\
     git://git.drobilla.net/fomp.lv2.git;protocol=https;branch=master \
     file://01_add-mod-brand-and-label.patch \
 "
-SRCREV="4511cfc6641bb9b4b08d63f3cd7d16911bce8372"
+SRCREV = "4511cfc6641bb9b4b08d63f3cd7d16911bce8372"
 
 S = "${WORKDIR}/git"
 

@@ -15,7 +15,7 @@ SRC_URI = "\
     file://01_optional-skip-state-properties.patch \
     file://02_mod-version-compare.patch \
 "
-SRCREV="a208ffd4776ebc9072bfca2603d6931e24917ccf"
+SRCREV = "a208ffd4776ebc9072bfca2603d6931e24917ccf"
 
 S = "${WORKDIR}/git"
 

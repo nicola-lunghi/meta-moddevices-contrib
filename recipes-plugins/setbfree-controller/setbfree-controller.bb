@@ -12,7 +12,7 @@ LIC_FILES_CHKSUM = ""
 SRC_URI = "\
     git://github.com/vallsv/setbfree-controller.lv2;protocol=https;branch=master \
 "
-SRCREV="f38a874143814b92a7ca81f2274cc5a76c80bf6f"
+SRCREV = "f38a874143814b92a7ca81f2274cc5a76c80bf6f"
 
 S = "${WORKDIR}/git"
 

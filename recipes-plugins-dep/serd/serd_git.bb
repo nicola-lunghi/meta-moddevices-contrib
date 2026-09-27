@@ -9,7 +9,7 @@ SRC_URI = "\
     git://github.com/drobilla/serd.git;protocol=https;branch=master \
     file://01_bypass-strict-separator-check.patch \
 "
-SRCREV="32f10751605e7124e415d38feb4d8176288c03ad"
+SRCREV = "32f10751605e7124e415d38feb4d8176288c03ad"
 
 S = "${WORKDIR}/git"
 

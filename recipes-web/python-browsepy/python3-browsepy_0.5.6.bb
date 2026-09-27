@@ -10,7 +10,7 @@ SRC_URI = "\
     git://github.com/moddevices/browsepy.git;protocol=https;branch=master \
     file://01_skip-unicategories-req.patch \
 "
-SRCREV="c2245873f9432b2839f09be7eeb2992fd3bbc5ff"
+SRCREV = "c2245873f9432b2839f09be7eeb2992fd3bbc5ff"
 
 S = "${WORKDIR}/git"
 

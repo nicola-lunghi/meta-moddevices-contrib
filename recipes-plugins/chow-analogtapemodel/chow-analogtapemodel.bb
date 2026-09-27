@@ -18,7 +18,7 @@ SRC_URI = "\
     file://07_rtneural-build-arm.patch;patchdir=../ \
     file://toolchain.cmake;patchdir=../ \
 "
-SRCREV="139ab8b5c2030d432ec258887f852a274582a862"
+SRCREV = "139ab8b5c2030d432ec258887f852a274582a862"
 
 S = "${WORKDIR}/git/Plugin"
 

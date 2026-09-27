@@ -14,7 +14,7 @@ SRC_URI = "\
     file://0001-We-re-using-lvtk-version-2.0.0.patch \
     file://0002-Adjusted-includes-for-lvtk-2.0.0.patch \
 "
-SRCREV="75895e56f9aeca84463dcfc83390617fa3d3ff67"
+SRCREV = "75895e56f9aeca84463dcfc83390617fa3d3ff67"
 
 inherit waf pkgconfig
 

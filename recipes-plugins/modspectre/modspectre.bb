@@ -13,7 +13,7 @@ INHIBIT_PACKAGE_DEBUG_SPLIT  = "1"
 SRC_URI = "\
     git://github.com/x42/modspectre.lv2.git;protocol=https;branch=master \
 "
-SRCREV="ec65c2fed8e65e38f656d57ea3e12c76bd046bba"
+SRCREV = "ec65c2fed8e65e38f656d57ea3e12c76bd046bba"
 
 S = "${WORKDIR}/git"
 

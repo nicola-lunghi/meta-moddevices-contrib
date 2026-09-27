@@ -24,7 +24,7 @@ SRC_URI = "\
     file://11_mod-path-tweaks.patch \
     file://12_no-ttl-generator.patch \
 "
-SRCREV="4d4aedf834dbd13c6e5f07ac512c9da74732fd58"
+SRCREV = "4d4aedf834dbd13c6e5f07ac512c9da74732fd58"
 
 PV = "3.0.5"
 

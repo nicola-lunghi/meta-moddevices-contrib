@@ -9,7 +9,7 @@ INSANE_SKIP:${PN} = "already-stripped"
 SRC_URI = "\
     gitsm://github.com/ninodewit/SHIRO-Plugins.git;protocol=https;branch=master \
 "
-SRCREV="60a678ca6abdb7fa10b0ac8dd87e0e41052abe78"
+SRCREV = "60a678ca6abdb7fa10b0ac8dd87e0e41052abe78"
 
 S = "${WORKDIR}/git"
 

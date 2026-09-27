@@ -9,7 +9,7 @@ SRC_URI = "\
     git://github.com/moddevices/mod-sdk.git;protocol=https;branch=master \
     file://01_add-makefile.patch \
 "
-SRCREV="2fe7c7728faa551b2838baa49c0d1953c64f2151"
+SRCREV = "2fe7c7728faa551b2838baa49c0d1953c64f2151"
 
 do_install () {
     oe_runmake install DESTDIR=${D} PREFIX=/usr

@@ -15,7 +15,7 @@ SRC_URI = "\
     gitsm://github.com/x42/x42-plugins.git;protocol=https;branch=master \
     file://0001-Skip-desktop-plugins.patch \
 "
-SRCREV="ec8a2d0d3a59a8465aef1325c0ba748e8e5b1757"
+SRCREV = "ec8a2d0d3a59a8465aef1325c0ba748e8e5b1757"
 
 S = "${WORKDIR}/git"
 

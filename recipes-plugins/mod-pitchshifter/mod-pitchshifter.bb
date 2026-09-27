@@ -12,7 +12,7 @@ S = "${WORKDIR}/git"
 SRC_URI = "\
     git://github.com/moddevices/mod-pitchshifter.git;protocol=https;branch=master \
 "
-SRCREV="4fabd8994c8dff40886198d9641c1b734655602d"
+SRCREV = "4fabd8994c8dff40886198d9641c1b734655602d"
 
 FXLIST = "\
     2Voices \

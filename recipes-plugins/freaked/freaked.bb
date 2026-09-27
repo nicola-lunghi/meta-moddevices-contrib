@@ -11,7 +11,7 @@ S = "${WORKDIR}/git"
 SRC_URI = "\
     git://github.com/pjotrompet/Freaked.git;protocol=https;branch=master \
 "
-SRCREV="7f4fca70d7d424ddd353347bafb68e62aba0e043"
+SRCREV = "7f4fca70d7d424ddd353347bafb68e62aba0e043"
 
 do_compile () {
     make -j 8 NOOPT=true

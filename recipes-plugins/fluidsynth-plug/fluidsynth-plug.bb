@@ -11,7 +11,7 @@ S = "${WORKDIR}/git"
 SRC_URI = "\
     git://github.com/falkTX/FluidPlug.git;protocol=https;branch=master\
 "
-SRCREV="889b2568f5c4483b1c72b5d82e4090e27ef824de"
+SRCREV = "889b2568f5c4483b1c72b5d82e4090e27ef824de"
 
 inherit pkgconfig
 

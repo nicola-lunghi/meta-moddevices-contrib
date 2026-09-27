@@ -10,7 +10,7 @@ INHIBIT_PACKAGE_DEBUG_SPLIT  = "1"
 SRC_URI = "\
     git://github.com/moddevices/cc-master.git;protocol=https;branch=master \
 "
-SRCREV="3fc46c8cee5318217a8d88e9883cbba25cc5e131"
+SRCREV = "3fc46c8cee5318217a8d88e9883cbba25cc5e131"
 
 S = "${WORKDIR}/git"
 

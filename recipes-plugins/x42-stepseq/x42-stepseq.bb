@@ -10,7 +10,7 @@ INSANE_SKIP:${PN} = "already-stripped"
 SRC_URI = "\
     git://github.com/x42/stepseq.lv2.git;protocol=https;branch=master \
 "
-SRCREV="b009812fd0af471b647c179c50ca0941c87ff6a4"
+SRCREV = "b009812fd0af471b647c179c50ca0941c87ff6a4"
 
 inherit pkgconfig
 

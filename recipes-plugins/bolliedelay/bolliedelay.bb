@@ -12,7 +12,7 @@ INHIBIT_PACKAGE_DEBUG_SPLIT  = "1"
 SRC_URI = "\
     git://github.com/MrBollie/bolliedelay.lv2.git;protocol=https;branch=master \
 "
-SRCREV="e00d63e5011ac209de3a70bd9a83c7cbb896383a"
+SRCREV = "e00d63e5011ac209de3a70bd9a83c7cbb896383a"
 
 S = "${WORKDIR}/git"
 

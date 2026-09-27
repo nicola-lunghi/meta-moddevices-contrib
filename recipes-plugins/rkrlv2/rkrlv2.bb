@@ -16,7 +16,7 @@ SRC_URI = "\
     git://github.com/ssj71/rkrlv2.git;protocol=https;branch=master \
     file://Remove-custom-cxx-flags.patch \
 "
-SRCREV="7edcb4e29a358623bfd57fa2c27e5da60adfcec3"
+SRCREV = "7edcb4e29a358623bfd57fa2c27e5da60adfcec3"
 
 S = "${WORKDIR}/git"
 

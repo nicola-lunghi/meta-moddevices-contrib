@@ -9,7 +9,7 @@ LIC_FILES_CHKSUM = ""
 SRC_URI = "\
     git://github.com/pantherb/setBfree.git;protocol=https;branch=master \
 "
-SRCREV="93e7f154bee67590d6d321a572a1b107f8fc36e1"
+SRCREV = "93e7f154bee67590d6d321a572a1b107f8fc36e1"
 
 inherit pkgconfig
 

@@ -12,7 +12,7 @@ INSANE_SKIP:${PN} = "already-stripped"
 SRC_URI = "\
     git://gareus.org/zeroconvo.lv2;protocol=https;branch=master \
 "
-SRCREV="9a056680a7d460ec93ec5ff355812586513ed2ea"
+SRCREV = "9a056680a7d460ec93ec5ff355812586513ed2ea"
 
 PV = "0.5.2"
 

@@ -12,7 +12,7 @@ S = "${WORKDIR}/git"
 SRC_URI = "\
     git://github.com/moddevices/caps-lv2.git;protocol=https;branch=master \
 "
-SRCREV="b830e2f8e46c2bf860ae77bdf86c57dfc9d977f9"
+SRCREV = "b830e2f8e46c2bf860ae77bdf86c57dfc9d977f9"
 
 FXLIST = "\
     mod-caps-AmpVTS.lv2 \

@@ -11,7 +11,7 @@ LIC_FILES_CHKSUM = ""
 SRC_URI = "\
     git://github.com/moddevices/sooperlooper-lv2-plugin.git;protocol=https;branch=master \
 "
-SRCREV="d3e80029ce4f6ef62b3758e95c5b889cab1db740"
+SRCREV = "d3e80029ce4f6ef62b3758e95c5b889cab1db740"
 
 S = "${WORKDIR}/git"
 

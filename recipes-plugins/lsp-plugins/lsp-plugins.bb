@@ -21,7 +21,7 @@ SRC_URI = "\
     file://lsp-plugins-impulse-responses.lv2/modgui_stereo.ttl \
     file://lsp-plugins-impulse-responses.lv2/modgui \
 "
-SRCREV="5ea0b02e08595a2fd2e29a1e0a2acf7189cce47a"
+SRCREV = "5ea0b02e08595a2fd2e29a1e0a2acf7189cce47a"
 
 S = "${WORKDIR}/git"
 

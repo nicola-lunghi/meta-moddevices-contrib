@@ -13,7 +13,7 @@ S = "${WORKDIR}/git"
 SRC_URI = "\
     git://github.com/moddevices/mod-distortion.git;protocol=https;branch=master \
 "
-SRCREV="e672d5feb9d631798e3d56eb96e8958c3d2c6821"
+SRCREV = "e672d5feb9d631798e3d56eb96e8958c3d2c6821"
 
 FXLIST = "\
     bigmuff \

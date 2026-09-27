@@ -15,7 +15,7 @@ SRC_URI = "\
     file://01_skip-thread-safe-planner.patch \
     file://02_mod-tweaks.patch \
 "
-SRCREV="348f266330de493fae73520361af89c4826029c4"
+SRCREV = "348f266330de493fae73520361af89c4826029c4"
 
 PV = "0.6.5"
 

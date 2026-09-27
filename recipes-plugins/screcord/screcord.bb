@@ -12,7 +12,7 @@ SRC_URI = "\
     gitsm://github.com/brummer10/screcord.lv2.git;protocol=https;branch=master \
     file://fix-compilation.patch \
 "
-SRCREV="fe0d42d31fecde5ad7d3c05514cf2ecb57fd2495"
+SRCREV = "fe0d42d31fecde5ad7d3c05514cf2ecb57fd2495"
 
 S = "${WORKDIR}/git"
 

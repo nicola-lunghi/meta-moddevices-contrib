@@ -9,10 +9,10 @@ INHIBIT_SYSROOT_STRIP = "1"
 INHIBIT_PACKAGE_DEBUG_SPLIT  = "1"
 
 SRC_URI = "\
-    gitsm://github.com/antanasbruzas/abNinjam.git;protocol=https \
+    gitsm://github.com/antanasbruzas/abNinjam.git;protocol=https;branch=master \
     file://connection.properties \
 "
-SRCREV="947ba6579261d5d090d093d0b4384a832aea75bb"
+SRCREV = "947ba6579261d5d090d093d0b4384a832aea75bb"
 
 S = "${WORKDIR}/git"
 

@@ -9,7 +9,7 @@ LIC_FILES_CHKSUM = ""
 SRC_URI = "\
     git://github.com/ssj71/infamousPlugins.git;protocol=https;branch=master \
 "
-SRCREV="28b405414a5d044e576ab00b75ceaa1c0a7b8929"
+SRCREV = "28b405414a5d044e576ab00b75ceaa1c0a7b8929"
 
 S = "${WORKDIR}/git"
 

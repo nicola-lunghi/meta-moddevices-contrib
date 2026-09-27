@@ -16,7 +16,7 @@ SRC_URI = "\
     gitsm://github.com/zamaudio/zam-plugins.git;protocol=https;branch=master \
     file://disable-generate-ttl-script.patch \
 "
-SRCREV="87fdee6e87dbee75c1088e2327ea59c1ab1522e4"
+SRCREV = "87fdee6e87dbee75c1088e2327ea59c1ab1522e4"
 
 inherit pkgconfig
 

@@ -13,7 +13,7 @@ SRC_URI = "\
     file://solve-do-package-qa-issue.patch \
     file://0002-Migration-to-python3-pycryptodome.patch \
 "
-SRCREV="43c204a397cf12f25654381893f59304ceec32a5"
+SRCREV = "43c204a397cf12f25654381893f59304ceec32a5"
 
 S = "${WORKDIR}/git"
 

@@ -10,7 +10,7 @@ DEPENDS += "lv2 serd sord"
 SRC_URI = "\
     git://git.drobilla.net/sratom.git;protocol=http;branch=master \
 "
-SRCREV="b9717ab942b38f023cee99b3c108514a651b2b51"
+SRCREV = "b9717ab942b38f023cee99b3c108514a651b2b51"
 
 S = "${WORKDIR}/git"
 

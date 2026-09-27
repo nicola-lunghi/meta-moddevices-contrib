@@ -14,7 +14,7 @@ SRC_URI = "\
     git://github.com/devcurmudgeon/alo.git;protocol=https;branch=master \
     file://0001-Now-log-is-saved-under-tmp.patch;patchdir=../ \
 "
-SRCREV="e4199cc84db18dbd9eb6a14c39fd6e1fae9a57c0"
+SRCREV = "e4199cc84db18dbd9eb6a14c39fd6e1fae9a57c0"
 
 S = "${WORKDIR}/git/source"
 

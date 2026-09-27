@@ -16,7 +16,7 @@ SRC_URI = "\
     gitsm://github.com/DISTRHO/OneKnob-Series.git;protocol=https;branch=main \
     file://conv-fix-crash-short-irs.patch \
 "
-SRCREV="d3e790f0030a3999b72d89d95bcedcdca851bea4"
+SRCREV = "d3e790f0030a3999b72d89d95bcedcdca851bea4"
 
 S = "${WORKDIR}/git"
 

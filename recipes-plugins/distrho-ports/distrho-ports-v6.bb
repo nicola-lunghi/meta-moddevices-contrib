@@ -13,7 +13,7 @@ SRC_URI = "\
     git://github.com/DISTRHO/DISTRHO-Ports.git;protocol=https;branch=master \
     file://01_no-lv2-gen.patch \
 "
-SRCREV="9f93a1966f70d65ad661ce0aeaf70305bc2d9d35"
+SRCREV = "9f93a1966f70d65ad661ce0aeaf70305bc2d9d35"
 
 S = "${WORKDIR}/git"
 

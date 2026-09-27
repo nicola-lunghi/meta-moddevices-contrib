@@ -8,7 +8,7 @@ S = "${WORKDIR}/git"
 SRC_URI = "\
     git://github.com/moddevices/GxSwitchlessWah.lv2.git;protocol=https;branch=master \
 "
-SRCREV="5d2fc315c85ac38e90ebe079968d45b805000fd2"
+SRCREV = "5d2fc315c85ac38e90ebe079968d45b805000fd2"
 
 do_compile:prepend () {
     sed -i -- 's/-msse2 -mfpmath=sse//' ${S}/Makefile

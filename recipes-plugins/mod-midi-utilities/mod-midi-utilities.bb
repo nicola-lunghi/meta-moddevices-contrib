@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = ""
 SRC_URI = "\
     git://github.com/moddevices/mod-midi-utilities.git;protocol=https;branch=master \
 "
-SRCREV="ffa812ca034d0f6e5c924c29f59f78569246d958"
+SRCREV = "ffa812ca034d0f6e5c924c29f59f78569246d958"
 
 S = "${WORKDIR}/git"
 

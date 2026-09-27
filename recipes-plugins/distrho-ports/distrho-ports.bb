@@ -27,7 +27,7 @@ SRC_URI = "\
     git://github.com/DISTRHO/DISTRHO-Ports.git;protocol=https;branch=legacy \
     file://01_workaround-missing-premake.patch \
 "
-SRCREV="d19e3eb1b79df52250e233329e3d31cdbc922cb4"
+SRCREV = "d19e3eb1b79df52250e233329e3d31cdbc922cb4"
 
 S = "${WORKDIR}/git"
 

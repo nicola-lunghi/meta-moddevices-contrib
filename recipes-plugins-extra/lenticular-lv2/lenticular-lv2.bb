@@ -13,7 +13,7 @@ SRC_URI = "\
     file://fix-lv2-includes.patch \
     file://fix-typo-makefile.patch \
 "
-SRCREV="d1127077e9d7b29fdc9824d725c31464633b6a11"
+SRCREV = "d1127077e9d7b29fdc9824d725c31464633b6a11"
 
 S = "${WORKDIR}/git"
 

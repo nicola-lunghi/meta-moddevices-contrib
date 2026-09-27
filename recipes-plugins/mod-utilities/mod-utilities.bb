@@ -11,7 +11,7 @@ S = "${WORKDIR}/git"
 SRC_URI = "\
     git://github.com/moddevices/mod-utilities.git;protocol=https;branch=master \
 "
-SRCREV="80ea3ea9f52fab7f191671f4810bf90fc955a046"
+SRCREV = "80ea3ea9f52fab7f191671f4810bf90fc955a046"
 
 inherit pkgconfig
 

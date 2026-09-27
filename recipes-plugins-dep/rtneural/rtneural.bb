@@ -10,7 +10,7 @@ SRC_URI = "\
     file://RTNeural.pc \
 "
 
-SRCREV="a32024ba96ee1cd37be6c71188b57dec8e3cbbbe"
+SRCREV = "a32024ba96ee1cd37be6c71188b57dec8e3cbbbe"
 
 S = "${WORKDIR}/git"
 

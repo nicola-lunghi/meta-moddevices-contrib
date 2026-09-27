@@ -15,7 +15,7 @@ SRC_URI = "\
     git://github.com/moddevices/tap-lv2.git;protocol=https;branch=master \
     file://fix-code-indentation.patch \
 "
-SRCREV="de26a3c8c8c2227e6d7fba3dcb54ec5fe2def258"
+SRCREV = "de26a3c8c8c2227e6d7fba3dcb54ec5fe2def258"
 
 FXLIST = "\
     autopan \

@@ -16,4 +16,4 @@ do_install[noexec] = "1"
 SRC_URI = "\
     git://github.com/moddevices/mod-lv2-data.git;protocol=https;branch=master \
 "
-SRCREV="0a89fb9806083cf02f99b28171d2d0ed427f2d62"
+SRCREV = "0a89fb9806083cf02f99b28171d2d0ed427f2d62"

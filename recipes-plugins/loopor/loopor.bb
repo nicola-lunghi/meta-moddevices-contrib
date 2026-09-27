@@ -12,7 +12,7 @@ INHIBIT_PACKAGE_DEBUG_SPLIT  = "1"
 SRC_URI = "\
     gitsm://github.com/stevie67/loopor.git;protocol=https;branch=master \
 "
-SRCREV="f89802c87db3b360c20af50ef2adedf60dcc9171"
+SRCREV = "f89802c87db3b360c20af50ef2adedf60dcc9171"
 
 S = "${WORKDIR}/git/loopor-lv2/source"
 

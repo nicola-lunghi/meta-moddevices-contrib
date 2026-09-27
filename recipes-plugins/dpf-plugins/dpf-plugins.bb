@@ -11,7 +11,7 @@ INSANE_SKIP:${PN} = "already-stripped"
 SRC_URI = "\
     git://github.com/DISTRHO/DPF-Plugins.git;protocol=https;branch=master \
 "
-SRCREV="86084a934adb26f529038cbcf901fd7a09b95897"
+SRCREV = "86084a934adb26f529038cbcf901fd7a09b95897"
 
 S = "${WORKDIR}/git"
 

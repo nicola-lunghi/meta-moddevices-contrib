@@ -18,8 +18,8 @@ SRC_URI[md5sum] = "7b5ddc42f210985b29c8769111217e4c"
 SRC_URI[sha256sum] = "10888d76299d8072990939be45d6fc5865f5a45d766d7690819c5899d2a588f0"
 
 # for builing apps
-CXXFLAGS+="-I../libs"
-LDFLAGS+="-L../libs"
+CXXFLAGS += "-I../libs"
+LDFLAGS += "-L../libs"
 
 do_compile() {
     cd ${S}/libs

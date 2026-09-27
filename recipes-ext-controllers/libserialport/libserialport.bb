@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = ""
 SRC_URI = "\
     git://sigrok.org/libserialport;protocol=git;branch=master \
 "
-SRCREV="master"
+SRCREV = "master"
 
 S = "${WORKDIR}/git"
 

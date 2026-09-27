@@ -8,7 +8,7 @@ LIC_FILES_CHKSUM = ""
 SRC_URI = "\
     git://github.com/lvtk/lvtk.git;protocol=https;branch=master \
 "
-SRCREV="6bfe981dfb5b27ea199dd4f6801b5305ca0355f9"
+SRCREV = "6bfe981dfb5b27ea199dd4f6801b5305ca0355f9"
 
 S = "${WORKDIR}/git"
 
