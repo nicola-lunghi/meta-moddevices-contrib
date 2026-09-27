@@ -24,7 +24,7 @@ do_install () {
     oe_runmake install DESTDIR=${D}
 }
 
-DEPENDS += " \
+DEPENDS += "\
     lv2 \
 "
 

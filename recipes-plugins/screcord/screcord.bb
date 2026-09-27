@@ -18,7 +18,7 @@ S = "${WORKDIR}/git"
 
 inherit pkgconfig
 
-DEPENDS = " \
+DEPENDS = "\
     libsndfile1 \
     lv2 \
 "

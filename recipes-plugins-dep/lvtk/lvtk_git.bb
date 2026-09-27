@@ -28,10 +28,10 @@ DEPENDS = "\
     lv2 \
 "
 
-RDEPENDS:${PN} = " \
+RDEPENDS:${PN} = "\
 "
 
-RPROVIDES:${PN} = " \
+RPROVIDES:${PN} = "\
     lvtk-2 \
 "
 

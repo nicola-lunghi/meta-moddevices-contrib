@@ -18,7 +18,7 @@ S = "${WORKDIR}/git"
 
 inherit cmake pkgconfig
 
-EXTRA_OECMAKE = " \
+EXTRA_OECMAKE = "\
     -DSFIZZ_JACK=OFF \
     -DSFIZZ_RENDER=OFF \
     -DSFIZZ_LV2_UI=OFF \
@@ -30,7 +30,7 @@ EXTRA_OECMAKE = " \
     -DLV2PLUGIN_INSTALL_DIR=${LV2_DIR}\
 "
 
-DEPENDS += " \
+DEPENDS += "\
     lv2 \
     jack \
     libsndfile1 \

@@ -21,7 +21,7 @@ DEPENDS = "\
 RDEPENDS:${PN} = "\
 "
 
-FILES:${PN} += " \
+FILES:${PN} += "\
     /usr/lib/lv2 \
 "
 

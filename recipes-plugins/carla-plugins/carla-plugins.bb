@@ -35,7 +35,7 @@ do_install () {
     cp -r ${WORKDIR}/../../mod-lv2-data/*/git/plugins-fixed/carla-files.lv2/modgui ${D}/${BUNDLEDIR}/carla-files.lv2
 }
 
-DEPENDS += " \
+DEPENDS += "\
     lv2 \
     jack \
     libsndfile1 \

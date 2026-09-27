@@ -65,7 +65,7 @@ do_install () {
     chmod 755 -R ${D}/${LV2_DIR_BAD}
 }
 
-DEPENDS += " \
+DEPENDS += "\
     lilv \
     lv2 \
     fftw \
@@ -77,7 +77,7 @@ DEPENDS += " \
     liblo \
 "
 
-RDEPENDS:${PN} += " \
+RDEPENDS:${PN} += "\
     liblo \
     jansson \
     libarchive \

@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=fbbe34c5344f5c542baf8ef7621305d0"
 
 inherit setuptools3 pkgconfig
 
-SRC_URI = " \
+SRC_URI = "\
     https://github.com/python-pillow/Pillow/archive/${PV}.tar.gz \
     file://0001-build-always-disable-platform-guessing.patch \
 "

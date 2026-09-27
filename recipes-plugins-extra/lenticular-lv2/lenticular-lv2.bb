@@ -30,7 +30,7 @@ do_install () {
     oe_runmake install
 }
 
-DEPENDS += " \
+DEPENDS += "\
     lv2 \
     jack \
 "

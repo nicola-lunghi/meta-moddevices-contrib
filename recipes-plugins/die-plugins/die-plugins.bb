@@ -28,7 +28,7 @@ do_install () {
     cp -rL ${S}/bin/distrho-a-fluidsynth.lv2/*.so ${D}${LV2_DIR}/distrho-a-fluidsynth.lv2
 }
 
-DEPENDS += " \
+DEPENDS += "\
     lv2 \
     jack \
     libsndfile1 \

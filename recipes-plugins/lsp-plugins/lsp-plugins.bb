@@ -55,7 +55,7 @@ do_install () {
     chmod 755 -R ${D}/${BUNDLEDIR}
 }
 
-DEPENDS += " \
+DEPENDS += "\
     jack \
     lv2 \
     fftw \

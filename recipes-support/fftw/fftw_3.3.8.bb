@@ -3,7 +3,7 @@ SECTION = "libs"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=59530bdf33659b29e73d4adb9f9f6552"
 
-SRC_URI = " \
+SRC_URI = "\
     http://www.fftw.org/fftw-${PV}.tar.gz \
     file://0001-NEON-autodetection-segfaults-assume-neon-present.patch \
 "
@@ -28,7 +28,7 @@ FFTW_NEON:class-native = ""
 do_configure() {
     # configure fftw
     rm -rf ${WORKDIR}/build-fftw
-	mkdir -p ${B}
+    mkdir -p ${B}
     cd ${B}
     # full (re)configure
     autotools_do_configure
@@ -36,15 +36,15 @@ do_configure() {
 
     # configure fftwl
     rm -rf ${WORKDIR}/build-fftwl
-	mkdir -p ${B}
+    mkdir -p ${B}
     cd ${B}
     # configure only
     oe_runconf  --enable-long-double
-    mv ${B} ${WORKDIR}/build-fftwl 
+    mv ${B} ${WORKDIR}/build-fftwl
 
     # configure fftwf
     rm -rf ${WORKDIR}/build-fftwf
-	mkdir -p ${B}
+    mkdir -p ${B}
     cd ${B}
     # configure only
     oe_runconf --enable-single ${FFTW_NEON}

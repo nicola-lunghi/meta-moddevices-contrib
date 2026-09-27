@@ -33,7 +33,7 @@ DEPENDS = "\
     readline \
 "
 
-FILES:${PN} += " \
+FILES:${PN} += "\
     /usr/bin \
     /usr/lib \
     /usr/bin/mod-host \

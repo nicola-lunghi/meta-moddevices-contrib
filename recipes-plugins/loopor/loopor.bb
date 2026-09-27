@@ -30,7 +30,7 @@ do_install () {
     chmod 755 -R ${D}/${LV2_DIR_BAD}/loopor.lv2
 }
 
-DEPENDS += " \
+DEPENDS += "\
     lv2 \
 "
 

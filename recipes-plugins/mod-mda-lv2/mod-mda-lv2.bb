@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
 #INSANE_SKIP:${PN} = "already-stripped"
-INSANE_SKIP:${PN} += " installed-vs-shipped"
+INSANE_SKIP:${PN} += "installed-vs-shipped"
 
 S = "${WORKDIR}/git"
 
@@ -25,7 +25,7 @@ do_install() {
     ${S}/waf -j1 install --destdir=${D}
 }
 
-DEPENDS = " \
+DEPENDS = "\
     lilv \
     jack \
 "

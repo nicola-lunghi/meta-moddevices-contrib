@@ -17,4 +17,4 @@ DEPENDS = "\
     aidadsp-lv2 \
 "
 
-FILES:${PN} = "/home/root" 
+FILES:${PN} = "/home/root"

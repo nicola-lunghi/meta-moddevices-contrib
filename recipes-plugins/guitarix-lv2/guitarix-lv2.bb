@@ -28,10 +28,10 @@ WEBGUICC = "\
 
 inherit waf pkgconfig
 
-EXTRA_OECONF = " \
+EXTRA_OECONF = "\
     --disable-sse \
-    --cxxflags="${CFLAGS}" \
-    --ldflags="${LDFLAGS}" \
+    --cxxflags="${CFLAGS}"\
+    --ldflags="${LDFLAGS}"\
     --includeconvolver \
     --includeresampler \
     --no-ldconfig \
@@ -58,7 +58,7 @@ do_install:append () {
     done
 }
 
-DEPENDS = " \
+DEPENDS = "\
     boost \
     libeigen \
     fftw \

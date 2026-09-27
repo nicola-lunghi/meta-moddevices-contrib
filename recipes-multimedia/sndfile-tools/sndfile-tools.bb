@@ -25,7 +25,7 @@ CXXFLAGS:append = " -ffast-math"
 
 do_install:append () {
     install -d ${D}/usr/lib/jack
-    mv ${D}/usr/lib/sndfile-jackplay.so ${D}/usr/lib/jack/ 
+    mv ${D}/usr/lib/sndfile-jackplay.so ${D}/usr/lib/jack/
 }
 
 FILES:${PN}:append = " \

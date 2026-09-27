@@ -56,7 +56,7 @@ do_install () {
     done
 }
 
-DEPENDS = " \
+DEPENDS = "\
     alsa-lib \
     lv2 \
 "

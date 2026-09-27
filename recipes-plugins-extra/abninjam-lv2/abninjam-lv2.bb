@@ -8,7 +8,7 @@ INHIBIT_PACKAGE_STRIP = "1"
 INHIBIT_SYSROOT_STRIP = "1"
 INHIBIT_PACKAGE_DEBUG_SPLIT  = "1"
 
-SRC_URI = " \
+SRC_URI = "\
     gitsm://github.com/antanasbruzas/abNinjam.git;protocol=https \
     file://connection.properties \
 "
@@ -20,7 +20,7 @@ EXTRA_OECMAKE = "-DABNINJAM_VST=OFF"
 
 inherit cmake
 
-DEPENDS += " \
+DEPENDS += "\
     lv2 \
     freetype \
     libvorbis \

@@ -20,7 +20,7 @@ WAF_PYTHON = "python"
 
 EXTRA_OECONF = "--prefix=/usr"
 
-RPROVIDES:${PN} += " \
+RPROVIDES:${PN} += "\
     libcc_client \
     libcontrolchain \
 "
@@ -36,7 +36,7 @@ RDEPENDS:${PN} = "\
     libcontrolchain \
 "
 
-FILES:${PN} += " \
+FILES:${PN} += "\
     /usr/include \
     /usr/bin \
     /usr/lib \
@@ -44,6 +44,6 @@ FILES:${PN} += " \
     /usr/lib/libcontrolchain.so \
 "
 
-FILES:${PN}-dev = " \
+FILES:${PN}-dev = "\
     ${includedir} \
 "

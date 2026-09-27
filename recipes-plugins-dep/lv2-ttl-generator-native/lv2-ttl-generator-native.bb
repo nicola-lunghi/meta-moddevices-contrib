@@ -10,7 +10,7 @@ inherit pkgconfig
 
 inherit native
 
-SRC_URI = " \
+SRC_URI = "\
     file://lv2_ttl_generator.c \
     file://GNUmakefile \
 "

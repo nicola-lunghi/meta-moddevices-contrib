@@ -26,7 +26,7 @@ LDFLAGS:append:aarch64 = " -static-libstdc++ -Wl,-Ofast -Wl,--as-needed -Wl,--st
 
 EXTRA_OECMAKE = '-DCMAKE_BUILD_TYPE=Release -DRTNEURAL_XSIMD=ON -DDESTDIR=${BUNDLEDIR} -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON'
 
-DEPENDS = " \
+DEPENDS = "\
     lv2 \
 "
 

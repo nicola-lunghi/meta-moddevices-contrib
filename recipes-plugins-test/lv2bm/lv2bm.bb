@@ -16,7 +16,7 @@ do_compile () {
     oe_runmake 'CC=${CC}' 'LD=${LD}'
 }
 
-DEPENDS = " \
+DEPENDS = "\
     libsndfile1 \
     glib-2.0 \
     lv2 \

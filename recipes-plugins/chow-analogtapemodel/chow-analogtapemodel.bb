@@ -26,7 +26,7 @@ inherit cmake
 
 EXTRA_OECMAKE += "-DMOD_TOOLCHAIN_FILE=${WORKDIR}/toolchain.cmake"
 
-DEPENDS = " \
+DEPENDS = "\
     lilv \
     freetype \
 "

@@ -34,8 +34,8 @@ do_install () {
 }
 
 # gtkmm
-DEPENDS = " \
-	lv2 \
+DEPENDS = "\
+    lv2 \
 "
 
 FILES:${PN} = "\

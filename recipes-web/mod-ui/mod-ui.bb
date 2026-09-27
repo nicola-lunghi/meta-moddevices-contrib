@@ -17,13 +17,13 @@ SRCREV="43c204a397cf12f25654381893f59304ceec32a5"
 
 S = "${WORKDIR}/git"
 
-DEPENDS += " \
+DEPENDS += "\
     alsa-lib \
     jack \
     lilv \
 "
 
-RDEPENDS:${PN} = " \
+RDEPENDS:${PN} = "\
     mod-host \
     sndfile-tools \
     python3-pillow \

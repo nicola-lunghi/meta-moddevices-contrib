@@ -24,7 +24,7 @@ do_install() {
     ${S}/waf -j1 install --destdir=${D}
 }
 
-DEPENDS = " \
+DEPENDS = "\
     fftw \
     lvtk \
 "

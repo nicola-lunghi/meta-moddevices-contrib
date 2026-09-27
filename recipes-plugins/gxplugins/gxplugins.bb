@@ -98,7 +98,7 @@ do_install () {
     done
 }
 
-DEPENDS = " \
+DEPENDS = "\
     lilv \
     ${@bb.utils.contains("LICENSE_FLAGS_WHITELIST", "commercial", "lv2-data-creative-commons", "", d)} \
 "

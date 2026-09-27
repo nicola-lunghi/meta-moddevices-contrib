@@ -36,7 +36,7 @@ do_install () {
     cp -r ${WORKDIR}/../../mod-lv2-data/*/git/plugins-fixed/zeroconvo.lv2/modgui ${D}/${BUNDLEDIR}/zeroconvo.lv2
 }
 
-DEPENDS += " \
+DEPENDS += "\
     lv2 \
     fftw \
     libsndfile1 \

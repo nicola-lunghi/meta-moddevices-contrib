@@ -55,7 +55,7 @@ do_install () {
     chmod 755 -R ${D}/${LV2_DIR}/
 }
 
-DEPENDS = " \
+DEPENDS = "\
     mxml \
     fftw \
     liblo \

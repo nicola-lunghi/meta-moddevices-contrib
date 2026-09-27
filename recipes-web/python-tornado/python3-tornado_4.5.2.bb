@@ -3,5 +3,5 @@ require python-tornado.inc
 
 # Requires _compression which is currently located in misc
 RDEPENDS:${PN} += "\
-    ${PYTHON_PN}-misc \
-    "
+    python3-misc \
+"

@@ -45,7 +45,7 @@ do_install () {
     mv ${D}${LV2_DIR}/zeroconvo.lv2/delta-48k.wav ${D}${LV2_DIR}/zeroconvo.lv2/ir
 }
 
-DEPENDS += " \
+DEPENDS += "\
     lv2 \
     fftw \
     libsndfile1 \

@@ -7,6 +7,6 @@ EXTRA_OECONF += "--no-plugins"
 
 DEPENDS = "libsndfile1"
 
-FILES:${PN} += " \
+FILES:${PN} += "\
     ${datadir} \
 "

@@ -14,7 +14,7 @@ RDEPENDS:${PN} = "\
     libfftwf \
 "
 
-SRC_URI = " \
+SRC_URI = "\
     http://kokkinizita.linuxaudio.org/linuxaudio/downloads/${BPN}-${PV}.tar.bz2 \
     file://0001-Align-Makefile.patch \
 "

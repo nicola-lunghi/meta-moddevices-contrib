@@ -5,12 +5,12 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 
 #inherit manpages
 
-DEPENDS = " \
+DEPENDS = "\
     ldconfig-native \
     ffmpeg \
 "
 
-SRC_URI = " \
+SRC_URI = "\
     http://kokkinizita.linuxaudio.org/linuxaudio/downloads/${BPN}-${PV}.tar.bz2 \
     file://01_makefile-changes.patch \
     file://02_use-ffmpeg.patch \
@@ -25,5 +25,5 @@ do_compile() {
 
 do_install() {
     cd ${S}/libs
-	oe_runmake 'DESTDIR=${D}' 'PREFIX=${prefix}' 'LIBDIR=${baselib}' install
+    oe_runmake 'DESTDIR=${D}' 'PREFIX=${prefix}' 'LIBDIR=${baselib}' install
 }

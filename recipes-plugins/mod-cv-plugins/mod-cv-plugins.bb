@@ -62,7 +62,7 @@ do_install () {
     chmod 755 -R ${D}/${BUNDLEDIR}
 }
 
-DEPENDS += " \
+DEPENDS += "\
     lv2 \
 "
 

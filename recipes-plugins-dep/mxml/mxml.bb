@@ -44,7 +44,7 @@ do_install () {
     oe_runmake 'DSTROOT=${D}' install
 }
 
-DEPENDS = " \
+DEPENDS = "\
 "
 
 FILES:${PN} = "\

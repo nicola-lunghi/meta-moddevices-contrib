@@ -21,7 +21,7 @@ do_install() {
     oe_runmake install DESTDIR=${D} LV2DIR=${LV2_DIR}
 }
 
-DEPENDS = " \
+DEPENDS = "\
     lilv \
 "
 
