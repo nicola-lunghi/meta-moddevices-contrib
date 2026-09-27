@@ -18,6 +18,6 @@ PACKAGECONFIG[jack] = "--enable-jack-support,--disable-jack-support,jack"
 PACKAGECONFIG[pulseaudio] = "--enable-pulse-support,--disable-pulse-support,pulseaudio"
 PACKAGECONFIG[portaudio] = "--enable-portaudio-support,--disable-portaudio-support,portaudio-v19"
 
-do_configure_prepend () {
+do_configure:prepend () {
     rm -f ${S}/m4/*
 }

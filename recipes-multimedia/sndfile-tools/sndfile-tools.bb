@@ -17,18 +17,18 @@ S = "${WORKDIR}/git"
 
 inherit autotools lib_package pkgconfig multilib_header
 
-CFLAGS_append_armv7a = " -fprefetch-loop-arrays -funroll-loops -funsafe-loop-optimizations"
-CXXFLAGS_append_armv7a = " -fprefetch-loop-arrays -funroll-loops -funsafe-loop-optimizations"
+CFLAGS:append:armv7a = " -fprefetch-loop-arrays -funroll-loops -funsafe-loop-optimizations"
+CXXFLAGS:append:armv7a = " -fprefetch-loop-arrays -funroll-loops -funsafe-loop-optimizations"
 
-CFLAGS_append = " -ffast-math"
-CXXFLAGS_append = " -ffast-math"
+CFLAGS:append = " -ffast-math"
+CXXFLAGS:append = " -ffast-math"
 
-do_install_append () {
+do_install:append () {
     install -d ${D}/usr/lib/jack
     mv ${D}/usr/lib/sndfile-jackplay.so ${D}/usr/lib/jack/ 
 }
 
-FILES_${PN}_append = " \
+FILES:${PN}:append = " \
     /usr/bin \
     /usr/share \
     /usr/lib \

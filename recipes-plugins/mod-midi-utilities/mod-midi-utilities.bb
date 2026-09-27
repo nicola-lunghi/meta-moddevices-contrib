@@ -43,7 +43,7 @@ DEPENDS += " \
     lv2 \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR}/midi-inv-switchbox.lv2/* \
     ${LV2_DIR}/midi-switchbox.lv2/* \
     ${LV2_DIR}/midi-switchbox3.lv2/* \

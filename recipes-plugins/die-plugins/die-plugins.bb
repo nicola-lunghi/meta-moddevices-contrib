@@ -5,7 +5,7 @@ SECTION = "lv2/stable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-INSANE_SKIP_${PN} = "already-stripped"
+INSANE_SKIP:${PN} = "already-stripped"
 
 SRC_URI = "\
     gitsm://github.com/DISTRHO/DIE-Plugins.git;protocol=https;branch=main \
@@ -35,6 +35,6 @@ DEPENDS += " \
     glib-2.0 \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "

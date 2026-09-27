@@ -13,6 +13,6 @@ S = "${WORKDIR}/git"
 inherit autotools
 
 # Without this folder fails the do_configure task...
-do_configure_prepend () {
+do_configure:prepend () {
     mkdir ${S}/autostuff
 }

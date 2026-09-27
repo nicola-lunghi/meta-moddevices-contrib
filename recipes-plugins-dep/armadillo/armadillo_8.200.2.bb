@@ -11,7 +11,7 @@ EXTRA_OECMAKE += " -DBUILD_SHARED_LIBS=ON -DINSTALL_LIB_DIR=${libdir}"
 DEPENDS += " lapack "
 inherit cmake
 
-FILES_${PN}-dev += " \
+FILES:${PN}-dev += " \
   /usr/share/Armadillo/CMake/ArmadilloLibraryDepends-noconfig.cmake \
   /usr/share/Armadillo/CMake/ArmadilloLibraryDepends.cmake \
   /usr/share/Armadillo/CMake/ArmadilloConfig.cmake \

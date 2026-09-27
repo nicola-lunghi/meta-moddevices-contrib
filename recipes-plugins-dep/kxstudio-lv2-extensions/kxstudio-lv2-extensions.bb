@@ -16,10 +16,10 @@ do_install () {
 DEPENDS = "\
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
 "
 
-FILES_${PN} += " \
+FILES:${PN} += " \
     /usr/lib/lv2 \
 "
 

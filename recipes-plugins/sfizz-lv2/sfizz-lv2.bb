@@ -3,7 +3,7 @@ DESCRIPTION = "Sfizz is a player for samples in sfz format available as lv2 plug
 SECTION = "lv2/stable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 SRC_URI = "\
     gitsm://github.com/sfztools/sfizz.git;protocol=https;branch=master \
@@ -36,6 +36,6 @@ DEPENDS += " \
     libsndfile1 \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "

@@ -4,7 +4,7 @@ DESCRIPTION = ""
 SECTION = "lv2/stable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 INHIBIT_PACKAGE_STRIP = "1"
 INHIBIT_SYSROOT_STRIP = "1"
@@ -35,6 +35,6 @@ DEPENDS += " \
     libsamplerate0 \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "

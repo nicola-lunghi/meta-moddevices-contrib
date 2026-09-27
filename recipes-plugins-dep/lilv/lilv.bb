@@ -2,7 +2,7 @@ SUMMARY = "C library providing simple use of LV2 plugins"
 HOMEPAGE = "http://drobilla.net/software/lilv"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://COPYING;md5=7aceb3a3edc99517b08f5cdd557e11fb"
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 inherit waf bash-completion pkgconfig
 

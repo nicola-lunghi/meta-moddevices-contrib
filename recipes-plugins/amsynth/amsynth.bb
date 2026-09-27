@@ -3,7 +3,7 @@ DESCRIPTION = "The AmSynth is a very big synth that might look quite difficult a
 SECTION = "lv2/stable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 PV = "1.6.3"
 
@@ -38,9 +38,9 @@ DEPENDS = "\
     lv2 \
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR}/amsynth.lv2 \
 "

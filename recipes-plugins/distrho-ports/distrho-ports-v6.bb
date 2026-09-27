@@ -3,10 +3,10 @@ DESCRIPTION = ""
 SECTION = "lv2/stable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
+INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
 
 # No information for SRC_URI yet (only an external source tree was specified)
 SRC_URI = "\
@@ -24,7 +24,7 @@ FXLIST = "\
     vitalium.lv2 \
 "
 
-EXTRA_OEMESON_append = "\
+EXTRA_OEMESON:append = "\
     --buildtype release --prefix /usr \
     -Dlinux-embed=true \
     -Doptimizations=false \
@@ -49,7 +49,7 @@ DEPENDS += " \
     freetype \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR}/SwankyAmp.lv2/* \
     ${LV2_DIR}/vitalium.lv2/* \
 "

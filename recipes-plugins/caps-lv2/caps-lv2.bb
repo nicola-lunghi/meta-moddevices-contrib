@@ -4,7 +4,7 @@ SECTION = "lv2/stable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-INSANE_SKIP_${PN} = "already-stripped"
+INSANE_SKIP:${PN} = "already-stripped"
 
 S = "${WORKDIR}/git"
 
@@ -66,6 +66,6 @@ DEPENDS = " \
     lv2 \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "

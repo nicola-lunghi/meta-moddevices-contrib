@@ -65,7 +65,7 @@ FXLIST = "\
 
 # This is required since different naming between this repo
 # and modgui graphics repo. Keep this list in sync with WEBGUICC.
-FXLIST_remove = "\
+FXLIST:remove = "\
     ${@bb.utils.contains("LICENSE_FLAGS_WHITELIST", "commercial", "GxSupersonic.lv2", "", d)} \
 "
 
@@ -103,6 +103,6 @@ DEPENDS = " \
     ${@bb.utils.contains("LICENSE_FLAGS_WHITELIST", "commercial", "lv2-data-creative-commons", "", d)} \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "

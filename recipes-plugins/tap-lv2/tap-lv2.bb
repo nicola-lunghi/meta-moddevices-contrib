@@ -3,10 +3,10 @@ DESCRIPTION = ""
 SECTION = "lv2/unstable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
+INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
 
 S = "${WORKDIR}/git"
 
@@ -39,7 +39,7 @@ FXLIST = "\
     vibrato \
 "
 
-do_compile_prepend () {
+do_compile:prepend () {
     sed -i -- 's/-mtune=generic -msse -msse2 -mfpmath=sse//' ${S}/Makefile.mk
 }
 
@@ -58,9 +58,9 @@ DEPENDS = " \
     jack \
 "
 
-RDEPENDS_tap-lv2 = "\
+RDEPENDS:tap-lv2 = "\
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "

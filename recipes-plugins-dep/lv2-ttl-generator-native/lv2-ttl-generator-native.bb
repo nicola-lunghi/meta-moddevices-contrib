@@ -4,7 +4,7 @@ HOMEPAGE = ""
 SECTION = "devel"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 inherit pkgconfig
 
@@ -15,7 +15,7 @@ SRC_URI = " \
     file://GNUmakefile \
 "
 
-do_compile_prepend () {
+do_compile:prepend () {
     cd ${WORKDIR}
     mkdir build
     mv lv2_ttl_generator.c GNUmakefile build/

@@ -16,16 +16,16 @@ S = "${WORKDIR}/pystache-${PV}"
 
 DEPENDS += "python3"
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
     python3-core \
 "
 
 # DISTUTILS_INSTALL_ARGS += "--disable-platform-guessing"
 
-CFLAGS_append = " -I${STAGING_INCDIR}"
-LDFLAGS_append = " -L${STAGING_LIBDIR}"
+CFLAGS:append = " -I${STAGING_INCDIR}"
+LDFLAGS:append = " -L${STAGING_LIBDIR}"
 
-do_compile_prepend() {
+do_compile:prepend() {
     export LDFLAGS="$LDFLAGS -L${STAGING_LIBDIR}"
     export CFLAGS="$CFLAGS -I${STAGING_INCDIR}"
 }

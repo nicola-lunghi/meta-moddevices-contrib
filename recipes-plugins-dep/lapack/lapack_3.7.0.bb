@@ -19,12 +19,12 @@ EXTRA_OECMAKE = "-DBUILD_SHARED_LIBS=ON"
 
 inherit cmake pkgconfig
 
-do_configure_prepend () {
+do_configure:prepend () {
     cp -f ${WORKDIR}/make.inc ${WORKDIR}/${PN}-${PV}/make.inc
 }
 
-FILES_${PN} += "${libdir}"
-FILES_${PN}-dbg += "${libdir}/.debug"
+FILES:${PN} += "${libdir}"
+FILES:${PN}-dbg += "${libdir}/.debug"
 
 PACKAGES =+ "${PN}-misc"
-FILES_${PN}-misc = "/usr/lib/libtmglib.so"
+FILES:${PN}-misc = "/usr/lib/libtmglib.so"

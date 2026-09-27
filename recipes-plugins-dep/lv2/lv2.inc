@@ -1,7 +1,7 @@
 SUMMARY = "LV2 is an open standard for audio plugins"
 LICENSE = "ISC"
 LIC_FILES_CHKSUM = "file://COPYING;md5=0383f162366b0c5a316292759a55d292"
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 PV = "1.18.2"
 SRC_URI = "\

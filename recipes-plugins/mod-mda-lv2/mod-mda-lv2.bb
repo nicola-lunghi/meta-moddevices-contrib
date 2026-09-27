@@ -4,8 +4,8 @@ SECTION = "lv2/stable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-#INSANE_SKIP_${PN} = "already-stripped"
-INSANE_SKIP_${PN} += " installed-vs-shipped"
+#INSANE_SKIP:${PN} = "already-stripped"
+INSANE_SKIP:${PN} += " installed-vs-shipped"
 
 S = "${WORKDIR}/git"
 
@@ -30,9 +30,9 @@ DEPENDS = " \
     jack \
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "

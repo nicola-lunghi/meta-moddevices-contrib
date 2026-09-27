@@ -44,7 +44,7 @@ EXTRA_OECONF = " \
     --lv2dir=${BUNDLEDIR} \
 "
 
-do_install_append () {
+do_install:append () {
     for fx in ${WEBGUI}; do
         rm -rf ${D}${BUNDLEDIR}/${fx}/*.ttl
         cp -rL ${WORKDIR}/../../mod-lv2-data/*/git/plugins/${fx}/*.ttl ${D}/${BUNDLEDIR}/${fx}
@@ -69,6 +69,6 @@ DEPENDS = " \
     ${@bb.utils.contains("LICENSE_FLAGS_WHITELIST", "commercial", "lv2-data-creative-commons", "", d)} \
 "
 
-FILES_${PN} += "\
+FILES:${PN} += "\
     ${LV2_DIR} \
 "

@@ -32,14 +32,14 @@ DEPENDS = "\
 	lv2 \
 "
 
-RDEPENDS_${PN} = " \
+RDEPENDS:${PN} = " \
 "
 
-RPROVIDES_${PN} = " \
+RPROVIDES:${PN} = " \
     lvtk-1 \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     /usr/include/lvtk-1 \
 	/usr/lib \
 "

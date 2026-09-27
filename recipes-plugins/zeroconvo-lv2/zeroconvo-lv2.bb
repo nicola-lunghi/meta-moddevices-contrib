@@ -5,8 +5,8 @@ SECTION = "lv2/stable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
+INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
 
 # No information for SRC_URI yet (only an external source tree was specified)
 SRC_URI = "\
@@ -20,14 +20,14 @@ S = "${WORKDIR}/git"
 
 inherit pkgconfig
 
-#CXXFLAGS_append = " -ffast-math -fomit-frame-pointer -O3 -fno-finite-math-only -DNDEBUG"
-CXXFLAGS_append = " -fno-finite-math-only -DNDEBUG"
+#CXXFLAGS:append = " -ffast-math -fomit-frame-pointer -O3 -fno-finite-math-only -DNDEBUG"
+CXXFLAGS:append = " -fno-finite-math-only -DNDEBUG"
 
 # Extra IR files not present in source code
 ZEROCONVO_IRS_TARBALL = "sisel4-ir.tar.xz"
 ZEROCONVO_IRS_URL = "https://x42-plugins.com/tmp/${ZEROCONVO_IRS_TARBALL}"
 
-do_install_prepend () {
+do_install:prepend () {
     cd ${WORKDIR}
     wget ${ZEROCONVO_IRS_URL}
     tar xf ${ZEROCONVO_IRS_TARBALL}
@@ -53,6 +53,6 @@ DEPENDS += " \
     glib-2.0 \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "

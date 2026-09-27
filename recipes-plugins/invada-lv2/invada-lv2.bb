@@ -3,7 +3,7 @@ DESCRIPTION = ""
 SECTION = "lv2/stable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 PV = "1.2.0"
 
@@ -27,8 +27,8 @@ inherit pkgconfig
 
 # This should fix No GNU_HASH in the elf binary but it doesn't
 #TARGET_CC_ARCH += "${LDFLAGS}"
-INSANE_SKIP_${PN} = "ldflags"
-#INSANE_SKIP_${PN}-dev = "ldflags"
+INSANE_SKIP:${PN} = "ldflags"
+#INSANE_SKIP:${PN}-dev = "ldflags"
 
 do_compile () {
     oe_runmake
@@ -49,10 +49,10 @@ DEPENDS = "\
     lv2 \
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR}/invada.lv2 \
     ${LV2_DIR_BAD}/invada-bad.lv2 \
 "

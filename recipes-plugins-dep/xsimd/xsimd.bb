@@ -18,5 +18,5 @@ S = "${WORKDIR}/git"
 
 inherit cmake pkgconfig
 
-FILES_${PN} += "${libdir}"
-FILES_${PN}-dbg += "${libdir}/.debug"
+FILES:${PN} += "${libdir}"
+FILES:${PN}-dbg += "${libdir}/.debug"

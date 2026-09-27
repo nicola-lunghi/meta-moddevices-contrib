@@ -2,7 +2,7 @@ SUMMARY = "Simple web file browser using flask"
 HOMEPAGE = "https://github.com/ergoithz/browsepy"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=e8d404beb09945b662eef91856df88db"
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 inherit setuptools3 pkgconfig
 
@@ -14,7 +14,7 @@ SRCREV="c2245873f9432b2839f09be7eeb2992fd3bbc5ff"
 
 S = "${WORKDIR}/git"
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
     python3-flask \
     python3-setuptools \
 "

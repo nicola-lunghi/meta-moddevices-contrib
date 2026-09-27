@@ -18,6 +18,6 @@ DEPENDS += "\
     jack \
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
     python3-core \
 "

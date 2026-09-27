@@ -27,13 +27,13 @@ DEPENDS = "\
     jack \
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
     jack-server \
 "
 
-FILES_${PN} += "\
+FILES:${PN} += "\
     /usr/local/bin \
     /usr/lib/jack \
 "
 
-FILES_${PN}-dbg += "/usr/local/bin/.debug"
+FILES:${PN}-dbg += "/usr/local/bin/.debug"

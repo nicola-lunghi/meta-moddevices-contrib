@@ -1,7 +1,7 @@
 # Recipe to install mod-lv2-extensions
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 S = "${WORKDIR}/git"
 
@@ -18,10 +18,10 @@ do_install () {
 DEPENDS = "\
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
 "
 
-FILES_${PN} += " \
+FILES:${PN} += " \
     /usr/lib/lv2 \
 "
 

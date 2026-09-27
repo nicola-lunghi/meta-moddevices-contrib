@@ -4,10 +4,10 @@ HOMEPAGE = "http://www.zamaudio.com"
 SECTION = "lv2/stable"
 LICENSE = "GPL-2.0"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-2.0;md5=801f80980d171dd6425610833a22dbe6"
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 BUNDLEDIR = "${@bb.utils.contains('SECTION', 'lv2/stable', '${LV2_DIR}', '${LV2_DIR_BAD}', d)}"
 
-INSANE_SKIP_${PN} = "already-stripped"
+INSANE_SKIP:${PN} = "already-stripped"
 
 S = "${WORKDIR}/git"
 
@@ -60,7 +60,7 @@ DEPENDS = " \
     mod-lv2-data \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR}/ZamAutoSat.lv2/* \
     ${LV2_DIR}/ZaMaximX2.lv2/* \
     ${LV2_DIR}/ZamComp.lv2/* \

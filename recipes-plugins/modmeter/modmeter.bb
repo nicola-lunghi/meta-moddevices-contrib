@@ -2,8 +2,8 @@
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
+INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
 
 # No information for SRC_URI yet (only an external source tree was specified)
 SRC_URI = "\
@@ -25,10 +25,10 @@ DEPENDS = " \
     lilv \
 "
 
-RDEPENDS_modmeter = "\
+RDEPENDS:modmeter = "\
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "
 

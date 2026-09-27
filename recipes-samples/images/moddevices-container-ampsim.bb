@@ -4,7 +4,7 @@ LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384
 
 require recipes-samples/images/moddevices-container-base.bb
 
-IMAGE_INSTALL_append = " \
+IMAGE_INSTALL:append = " \
     aidadsp-lv2 \
     caps-lv2 \
     carla-plugins \

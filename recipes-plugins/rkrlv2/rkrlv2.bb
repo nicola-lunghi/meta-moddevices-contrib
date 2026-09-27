@@ -5,11 +5,11 @@ DESCRIPTION = ""
 SECTION = "lv2/stable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-#INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
-#INSANE_SKIP_${PN} = "ldflags"
+#INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
+#INSANE_SKIP:${PN} = "ldflags"
 
 # No information for SRC_URI yet (only an external source tree was specified)
 SRC_URI = "\
@@ -40,11 +40,11 @@ DEPENDS = "\
     libsamplerate0 \
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
     libfftw \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR}/rkr.lv2 \
     ${LV2_DIR_BAD}/rkr-bad.lv2 \
 "

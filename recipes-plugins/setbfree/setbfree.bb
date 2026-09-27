@@ -2,8 +2,8 @@
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-#INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
+#INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
 
 # No information for SRC_URI yet (only an external source tree was specified)
 SRC_URI = "\
@@ -15,7 +15,7 @@ inherit pkgconfig
 
 S = "${WORKDIR}/git"
 
-do_configure_prepend () {
+do_configure:prepend () {
     sed -i -- 's/-msse -msse2 -mfpmath=sse//' ${S}/common.mak
     sed -i -- 's/^lv2dir = \$(PREFIX)\/lib\/lv2/lv2dir = \/\/home\/root\/.lv2/' ${S}/common.mak
 }
@@ -41,7 +41,7 @@ DEPENDS += " \
     jack \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR}/b_overdrive/b_overdrive.so \
     ${LV2_DIR}/b_reverb/b_reverb.so \
     ${LV2_DIR}/b_synth/b_synth.so \

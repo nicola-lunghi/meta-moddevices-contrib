@@ -1,12 +1,12 @@
 # Recipe to install mxml
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-#INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
-INSANE_SKIP_${PN} = "ldflags"
-INSANE_SKIP_${PN} += "useless-rpaths"
+#INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
+INSANE_SKIP:${PN} = "ldflags"
+INSANE_SKIP:${PN} += "useless-rpaths"
 
 PV = "2.10"
 
@@ -32,7 +32,7 @@ do_configure () {
     oe_runconf
 }
 
-do_compile_prepend () {
+do_compile:prepend () {
     cp -r ${S}/* ${WORKDIR}/build
 }
 
@@ -47,7 +47,7 @@ do_install () {
 DEPENDS = " \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     /usr/lib/libmxml.so \
     /usr/lib/libmxml.so.1 \
     /usr/lib/libmxml.so.1.5 \

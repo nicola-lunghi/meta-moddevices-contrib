@@ -20,7 +20,7 @@ WAF_PYTHON = "python"
 
 EXTRA_OECONF = "--prefix=/usr --disable-examples --disable-ui"
 
-do_install_prepend () {
+do_install:prepend () {
     cp -r ${WORKDIR}/build ${S}/
 }
 
@@ -28,14 +28,14 @@ DEPENDS = "\
     lv2 \
 "
 
-RDEPENDS_${PN} = " \
+RDEPENDS:${PN} = " \
 "
 
-RPROVIDES_${PN} = " \
+RPROVIDES:${PN} = " \
     lvtk-2 \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     /usr/include/lvtk-2 \
     /usr/lib \
 "

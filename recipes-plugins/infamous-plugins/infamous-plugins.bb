@@ -60,11 +60,11 @@ DEPENDS = "\
     zita-resampler \
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
     libfftwf \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR}/stuck.lv2 \
     ${LV2_DIR}/ewham.lv2 \
     ${LV2_DIR}/mindi.lv2 \

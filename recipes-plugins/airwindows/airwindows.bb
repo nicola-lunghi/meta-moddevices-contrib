@@ -6,7 +6,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 BUNDLEDIR = "${@bb.utils.contains('SECTION', 'lv2/stable', '${LV2_DIR}', '${LV2_DIR_BAD}', d)}"
 
-INSANE_SKIP_${PN} += "already-stripped"
+INSANE_SKIP:${PN} += "already-stripped"
 
 SRC_URI = "\
     git://github.com/hannesbraun/airwindows-lv2.git;protocol=https;branch=master \
@@ -43,6 +43,6 @@ DEPENDS += "\
     mod-lv2-data \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${BUNDLEDIR} \
 "

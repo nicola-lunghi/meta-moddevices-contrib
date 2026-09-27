@@ -29,9 +29,9 @@ DEPENDS = " \
     lvtk \
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR_BAD} \
 "

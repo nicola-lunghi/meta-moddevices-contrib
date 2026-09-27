@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 BUNDLEDIR = "${@bb.utils.contains('SECTION', 'lv2/stable', '${LV2_DIR}', '${LV2_DIR_BAD}', d)}"
 
-INSANE_SKIP_${PN} = "already-stripped"
+INSANE_SKIP:${PN} = "already-stripped"
 
 # No information for SRC_URI yet (only an external source tree was specified)
 SRC_URI = "\
@@ -31,6 +31,6 @@ do_install () {
     oe_runmake install DESTDIR=${D}${BUNDLEDIR} INSTALL_DIR=""
 }
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${BUNDLEDIR} \
 "

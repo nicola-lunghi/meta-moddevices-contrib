@@ -19,10 +19,10 @@ DEPENDS += "python3 libjpeg-turbo zlib tiff freetype libpng jpeg"
 
 # DISTUTILS_INSTALL_ARGS += "--disable-platform-guessing"
 
-CFLAGS_append = " -I${STAGING_INCDIR}"
-LDFLAGS_append = " -L${STAGING_LIBDIR}"
+CFLAGS:append = " -I${STAGING_INCDIR}"
+LDFLAGS:append = " -L${STAGING_LIBDIR}"
 
-do_compile_prepend() {
+do_compile:prepend() {
     export LDFLAGS="$LDFLAGS -L${STAGING_LIBDIR}"
     export CFLAGS="$CFLAGS -I${STAGING_INCDIR}"
 }

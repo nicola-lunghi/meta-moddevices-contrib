@@ -1,7 +1,7 @@
 # Recipe to install jack-capture
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 # No information for SRC_URI yet (only an external source tree was specified)
 SRC_URI = "\
@@ -28,10 +28,10 @@ DEPENDS = "\
     jack \
 "
 
-RDEPENDS_jack-capture = "\
+RDEPENDS:jack-capture = "\
     jack-server \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     /usr/local/bin/jack_capture \
 "

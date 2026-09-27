@@ -3,9 +3,9 @@ DESCRIPTION = ""
 SECTION = "lv2/unstable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-INSANE_SKIP_${PN} += "already-stripped"
+INSANE_SKIP:${PN} += "already-stripped"
 
 PV = "22.05"
 
@@ -27,9 +27,9 @@ S = "${WORKDIR}/cardinal-${PV}"
 
 inherit pkgconfig
 
-CFLAGS_append = " -ffat-lto-objects -Wno-format-security -Wimplicit-fallthrough=0"
-CXXFLAGS_append = " -ffat-lto-objects -Wno-format-security -Wimplicit-fallthrough=0"
-LDFLAGS_append = " -ffat-lto-objects -Wno-format-security -Wimplicit-fallthrough=0"
+CFLAGS:append = " -ffat-lto-objects -Wno-format-security -Wimplicit-fallthrough=0"
+CXXFLAGS:append = " -ffat-lto-objects -Wno-format-security -Wimplicit-fallthrough=0"
+LDFLAGS:append = " -ffat-lto-objects -Wno-format-security -Wimplicit-fallthrough=0"
 EXTRA_OEMAKE = "HEADLESS=true CROSS_COMPILING=true MOD_BUILD=true NOOPT=true SYSDEPS=true STATIC_BUILD=true WITH_LTO=true"
 
 # QuickJS target, needed for AriaModules
@@ -77,7 +77,7 @@ DEPENDS += " \
     liblo \
 "
 
-RDEPENDS_${PN} += " \
+RDEPENDS:${PN} += " \
     liblo \
     jansson \
     libarchive \
@@ -87,6 +87,6 @@ RDEPENDS_${PN} += " \
     zstd \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR_BAD} \
 "

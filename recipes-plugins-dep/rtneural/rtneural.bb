@@ -32,6 +32,6 @@ do_install () {
     cp -r ${S}/modules/json ${D}${includedir}/modules/
 }
 
-FILES_${PN} += "${libdir}"
-FILES_${PN}-dev += "${includedir}"
-FILES_${PN}-dbg += "${libdir}/.debug"
+FILES:${PN} += "${libdir}"
+FILES:${PN}-dev += "${includedir}"
+FILES:${PN}-dbg += "${libdir}/.debug"

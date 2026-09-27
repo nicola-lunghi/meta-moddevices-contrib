@@ -1,12 +1,12 @@
 # Recipe to install stegosaurus lv2 plugin
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-#FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+#FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-#INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
-#INSANE_SKIP_${PN} = "ldflags"
-#INSANE_SKIP_${PN} += "useless-rpaths"
+#INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
+#INSANE_SKIP:${PN} = "ldflags"
+#INSANE_SKIP:${PN} += "useless-rpaths"
 
 PV = "0.0.3"
 
@@ -40,5 +40,5 @@ DEPENDS = " \
 	cairo \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
 "

@@ -1,12 +1,12 @@
 # Recipe to install triceratops lv2 plugin
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-#FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+#FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-#INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
-#INSANE_SKIP_${PN} = "ldflags"
-#INSANE_SKIP_${PN} += "useless-rpaths"
+#INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
+#INSANE_SKIP:${PN} = "ldflags"
+#INSANE_SKIP:${PN} += "useless-rpaths"
 
 PV = "0.3.0"
 
@@ -38,5 +38,5 @@ DEPENDS = " \
 	lv2 \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
 "

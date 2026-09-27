@@ -10,7 +10,7 @@ SRC_URI = "\
 "
 SRCREV="5d2fc315c85ac38e90ebe079968d45b805000fd2"
 
-do_compile_prepend () {
+do_compile:prepend () {
     sed -i -- 's/-msse2 -mfpmath=sse//' ${S}/Makefile
 }
 
@@ -24,11 +24,11 @@ DEPENDS = " \
     lilv \
 "
 
-RDEPENDS_gxswitchlesswah-lv2 = "\
+RDEPENDS:gxswitchlesswah-lv2 = "\
     libgcc \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "
 

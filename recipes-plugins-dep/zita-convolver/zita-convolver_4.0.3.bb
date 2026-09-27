@@ -10,7 +10,7 @@ DEPENDS = "\
     fftw \
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
     libfftwf \
 "
 

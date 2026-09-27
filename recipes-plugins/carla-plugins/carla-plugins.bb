@@ -3,10 +3,10 @@ DESCRIPTION = "Carla lv2 plugins contains audio and midi players"
 SECTION = "lv2/stable"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://README.md;md5=df509b3978de953a47be5c82c7727684"
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 BUNDLEDIR = "${@bb.utils.contains('SECTION', 'lv2/stable', '${LV2_DIR}', '${LV2_DIR_BAD}', d)}"
 
-INSANE_SKIP_${PN} = "already-stripped"
+INSANE_SKIP:${PN} = "already-stripped"
 
 SRC_URI = "\
     gitsm://github.com/falkTX/Carla.git;protocol=https;branch=main \
@@ -42,6 +42,6 @@ DEPENDS += " \
     mod-lv2-data \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "

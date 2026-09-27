@@ -1,10 +1,10 @@
 # Recipe to install mod-ui software
 LICENSE = "GPL-3.0"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-3.0;md5=c79ff39f19dfec6d293b95dea7b07891"
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-INSANE_SKIP_${PN} = "file-rdeps"
-INSANE_SKIP_${PN} += "already-stripped"
+INSANE_SKIP:${PN} = "file-rdeps"
+INSANE_SKIP:${PN} += "already-stripped"
 
 inherit setuptools3 pkgconfig
 
@@ -23,7 +23,7 @@ DEPENDS += " \
     lilv \
 "
 
-RDEPENDS_${PN} = " \
+RDEPENDS:${PN} = " \
     mod-host \
     sndfile-tools \
     python3-pillow \
@@ -38,4 +38,4 @@ RDEPENDS_${PN} = " \
     kxstudio-lv2-extensions \
 "
 
-FILES_${PN} += "/"
+FILES:${PN} += "/"

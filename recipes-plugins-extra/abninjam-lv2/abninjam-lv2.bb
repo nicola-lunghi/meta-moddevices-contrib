@@ -43,7 +43,7 @@ do_install () {
     ln -s ../../mnt/data/.config/abNinjam ${D}${ROOT_HOME}/abNinjam
 }
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR_BAD} \
     /mnt/data/.config/abNinjam \
     ${ROOT_HOME}/abNinjam \

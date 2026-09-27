@@ -10,7 +10,7 @@ SRC_URI = "\
 "
 SRCREV="54a9acc8fe85212542c1cb4088338d3627788139"
 
-do_compile_prepend () {
+do_compile:prepend () {
     sed -i -- 's/-msse2 -mfpmath=sse//' ${S}/Makefile
 }
 
@@ -24,10 +24,10 @@ DEPENDS = " \
     lilv \
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "
 

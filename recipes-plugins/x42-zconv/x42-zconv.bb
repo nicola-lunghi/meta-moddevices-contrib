@@ -6,8 +6,8 @@ LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 BUNDLEDIR = "${@bb.utils.contains('SECTION', 'lv2/stable', '${LV2_DIR}', '${LV2_DIR_BAD}', d)}"
 
-INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
+INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
 
 # No information for SRC_URI yet (only an external source tree was specified)
 SRC_URI = "\
@@ -23,7 +23,7 @@ S = "${WORKDIR}/git"
 
 inherit pkgconfig
 
-CXXFLAGS_append = " -fno-finite-math-only -DNDEBUG -D_MOD_DEVICE_DWARF"
+CXXFLAGS:append = " -fno-finite-math-only -DNDEBUG -D_MOD_DEVICE_DWARF"
 
 do_install () {
     cd ${S}
@@ -45,6 +45,6 @@ DEPENDS += " \
     mod-lv2-data \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "

@@ -3,7 +3,7 @@ DESCRIPTION = ""
 SECTION = "lv2/stable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 # No information for SRC_URI yet (only an external source tree was specified)
 SRC_URI = "\
@@ -34,9 +34,9 @@ DEPENDS = "\
     lvtk \
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR}/dexed.lv2 \
 "

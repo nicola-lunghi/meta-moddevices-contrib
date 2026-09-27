@@ -4,8 +4,8 @@ SECTION = "lv2/unstable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
+INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
 
 # No information for SRC_URI yet (only an external source tree was specified)
 SRC_URI = "\
@@ -21,7 +21,7 @@ inherit pkgconfig
 
 EXTRA_OEMAKE = "'DESTDIR=${D}' 'LV2DIR=${LV2_DIR_BAD}'"
 
-do_configure_prepend() {
+do_configure:prepend() {
     cd ${S}
     git submodule update --init --recursive
 }
@@ -35,6 +35,6 @@ DEPENDS += " \
     jack \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR_BAD} \
 "

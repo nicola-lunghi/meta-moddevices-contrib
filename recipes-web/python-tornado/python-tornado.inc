@@ -9,16 +9,16 @@ LIC_FILES_CHKSUM = "file://setup.py;startline=2;endline=15;md5=5ab7571a79ad62d0c
 SRC_URI[md5sum] = "ab41f6765d58089f30ba51e8ec084a7b"
 SRC_URI[sha256sum] = "1fb8e494cd46c674d86fac5885a3ff87b0e283937a47d74eb3c02a48c9e89ad0"
 
-RDEPENDS_${PN} += "${PYTHON_PN}-compression ${PYTHON_PN}-numbers ${PYTHON_PN}-email \
+RDEPENDS:${PN} += "${PYTHON_PN}-compression ${PYTHON_PN}-numbers ${PYTHON_PN}-email \
                    ${PYTHON_PN}-pkgutil ${PYTHON_PN}-html ${PYTHON_PN}-json ${PYTHON_PN}-certifi ${PYTHON_PN}-threading"
 
-RDEPENDS_${PN}-test += "${PN} ${PYTHON_PN}-unittest"
+RDEPENDS:${PN}-test += "${PN} ${PYTHON_PN}-unittest"
 
 PACKAGES =+ "\
     ${PN}-test \
 "
 
-FILES_${PN}-test = " \
+FILES:${PN}-test = " \
     ${libdir}/${PYTHON_DIR}/site-packages/*/test \
     ${libdir}/${PYTHON_DIR}/site-packages/*/testing.py* \
 "

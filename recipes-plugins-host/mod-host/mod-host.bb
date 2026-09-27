@@ -2,8 +2,8 @@
 LICENSE = "GPL-3.0"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-3.0;md5=c79ff39f19dfec6d293b95dea7b07891"
 
-INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
+INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
 
 S = "${WORKDIR}/git"
 
@@ -16,7 +16,7 @@ SRCREV="f36bce78eed80f4f7194c923afd4dcae2c80bc79"
 
 inherit pkgconfig
 
-CFLAGS_append = "-ffast-math"
+CFLAGS:append = "-ffast-math"
 
 do_compile () {
     oe_runmake
@@ -33,7 +33,7 @@ DEPENDS = "\
     readline \
 "
 
-FILES_${PN} += " \
+FILES:${PN} += " \
     /usr/bin \
     /usr/lib \
     /usr/bin/mod-host \

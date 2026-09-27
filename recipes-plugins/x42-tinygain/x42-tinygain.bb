@@ -28,6 +28,6 @@ DEPENDS += " \
     lv2 \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR} \
 "

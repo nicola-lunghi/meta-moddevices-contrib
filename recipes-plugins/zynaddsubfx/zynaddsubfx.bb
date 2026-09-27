@@ -5,9 +5,9 @@ HOMEPAGE = "http://zynaddsubfx.sourceforge.net"
 SECTION = "lv2/stable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-INSANE_SKIP_${PN} = "already-stripped"
+INSANE_SKIP:${PN} = "already-stripped"
 
 # No information for SRC_URI yet (only an external source tree was specified)
 SRC_URI = "\
@@ -64,10 +64,10 @@ DEPENDS = " \
     jack \
 "
 
-RDEPENDS_zynaddsubfx = "\
+RDEPENDS:zynaddsubfx = "\
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR}/ZynAddSubFX.lv2/* \
     ${LV2_DIR}/ZynAlienWah.lv2/* \
     ${LV2_DIR}/ZynChorus.lv2/* \

@@ -34,6 +34,6 @@ DEPENDS += " \
     lv2 \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR_BAD}/loopor.lv2 \
 "

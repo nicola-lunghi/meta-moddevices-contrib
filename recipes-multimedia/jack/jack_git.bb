@@ -12,7 +12,7 @@ LIC_FILES_CHKSUM = " \
     file://common/jack/jack.h;beginline=1;endline=19;md5=6b736ed6b810592b135480a5e853392e \
 "
 
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 DEPENDS = "libsamplerate0 libsndfile1 readline"
 
@@ -35,21 +35,21 @@ PACKAGECONFIG[opus] = "--opus=yes,--opus=no,libopus"
 # portaudio is for windows builds only
 EXTRA_OECONF = "--portaudio=no"
 
-CFLAGS_append = " -ffast-math"
-CXXFLAGS_append = " -ffast-math"
+CFLAGS:append = " -ffast-math"
+CXXFLAGS:append = " -ffast-math"
 
 PACKAGES =+ "libjack jack-server jack-utils"
 
-RDEPENDS_jack-utils = "python3-core"
+RDEPENDS:jack-utils = "python3-core"
 
-RDEPENDS_jack-dev_remove = "${PN} (= ${EXTENDPKGV})"
+RDEPENDS:jack-dev:remove = "${PN} (= ${EXTENDPKGV})"
 
-FILES_libjack = "${libdir}/*.so.* ${libdir}/jack/*.so"
-FILES_jack-server = " \
+FILES:libjack = "${libdir}/*.so.* ${libdir}/jack/*.so"
+FILES:jack-server = " \
     ${datadir}/dbus-1/services \
     ${bindir}/jackdbus \
     ${bindir}/jackd \
 "
-FILES_jack-utils = "${bindir}/*"
+FILES:jack-utils = "${bindir}/*"
 
-FILES_${PN}-doc += " ${datadir}/jack-audio-connection-kit/reference/html/* "
+FILES:${PN}-doc += " ${datadir}/jack-audio-connection-kit/reference/html/* "

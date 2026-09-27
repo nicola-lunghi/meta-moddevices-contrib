@@ -8,7 +8,7 @@ require recipes-samples/images/moddevices-contrib.inc
 OCI_IMAGE_ENTRYPOINT = "/usr/bin/sh"
 CONTAINER_SHELL = "busybox"
 
-IMAGE_INSTALL_append = " \
+IMAGE_INSTALL:append = " \
     ${CONTAINER_SHELL} \
     util-linux-taskset \
     util-linux-chrt \

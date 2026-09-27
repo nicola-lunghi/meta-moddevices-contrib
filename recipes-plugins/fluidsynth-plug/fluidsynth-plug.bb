@@ -2,8 +2,8 @@
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-INSANE_SKIP_${PN} = "already-stripped"
-#INSANE_SKIP_${PN} += " installed-vs-shipped"
+INSANE_SKIP:${PN} = "already-stripped"
+#INSANE_SKIP:${PN} += " installed-vs-shipped"
 
 S = "${WORKDIR}/git"
 
@@ -15,7 +15,7 @@ SRCREV="889b2568f5c4483b1c72b5d82e4090e27ef824de"
 
 inherit pkgconfig
 
-do_compile_prepend () {
+do_compile:prepend () {
     sed -i -- 's/$(PREFIX)\/lib\/lv2//' ${S}/Makefile
 }
 
@@ -34,11 +34,11 @@ DEPENDS = " \
     lv2 \
 "
 
-RDEPENDS_fluidsynth-plug = "\
+RDEPENDS:fluidsynth-plug = "\
     fluidsynth \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR}/AirFont320.lv2/* \
     ${LV2_DIR}/AVL_Drumkits_Perc.lv2/* \
     ${LV2_DIR}/Black_Pearl_4A.lv2/* \

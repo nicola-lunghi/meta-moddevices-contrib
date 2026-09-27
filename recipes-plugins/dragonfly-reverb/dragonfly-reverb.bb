@@ -6,7 +6,7 @@ LICENSE = "GPL-3.0"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-3.0;md5=c79ff39f19dfec6d293b95dea7b07891"
 BUNDLEDIR = "${@bb.utils.contains('SECTION', 'lv2/stable', '${LV2_DIR}', '${LV2_DIR_BAD}', d)}"
 
-INSANE_SKIP_${PN} += "already-stripped"
+INSANE_SKIP:${PN} += "already-stripped"
 
 FXLIST = "\
     dragonfly-early-reflections \
@@ -34,8 +34,8 @@ S = "${WORKDIR}/git"
 
 inherit pkgconfig
 
-do_configure_prepend () {
-    bbwarn Fetching submodules in do_configure_prepend, fixme
+do_configure:prepend () {
+    bbwarn Fetching submodules in do_configure:prepend, fixme
     cd ${S}
     git submodule update --init --recursive
 }
@@ -66,6 +66,6 @@ DEPENDS += "\
     mod-lv2-data \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${BUNDLEDIR} \
 "

@@ -3,7 +3,7 @@ DESCRIPTION = ""
 SECTION = "lv2/unstable"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 INHIBIT_PACKAGE_STRIP = "1"
 INHIBIT_SYSROOT_STRIP = "1"
@@ -22,8 +22,8 @@ inherit pkgconfig
 
 # This should fix No GNU_HASH in the elf binary but it doesn't
 #TARGET_CC_ARCH += "${LDFLAGS}"
-#INSANE_SKIP_${PN} = "ldflags"
-#INSANE_SKIP_${PN}-dev = "ldflags"
+#INSANE_SKIP:${PN} = "ldflags"
+#INSANE_SKIP:${PN}-dev = "ldflags"
 
 do_compile () {
     oe_runmake
@@ -44,9 +44,9 @@ DEPENDS = "\
     lv2 \
 "
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${LV2_DIR_BAD}/alo.lv2 \
 "

@@ -4,10 +4,10 @@ DESCRIPTION = "LSP (Linux Studio Plugins) is a collection of open-source plugins
 SECTION = "lv2/stable"
 LICENSE = "GPL-3.0"
 LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=3000208d539ec061b899bce1d9ce9404"
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 BUNDLEDIR = "${@bb.utils.contains('SECTION', 'lv2/stable', '${LV2_DIR}', '${LV2_DIR_BAD}', d)}"
 
-INSANE_SKIP_${PN} = "ldflags"
+INSANE_SKIP:${PN} = "ldflags"
 
 # No information for SRC_URI yet (only an external source tree was specified)
 SRC_URI = "\
@@ -63,6 +63,6 @@ DEPENDS += " \
     libsamplerate0 \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${BUNDLEDIR} \
 "

@@ -30,6 +30,6 @@ DEPENDS += " \
     fftw \
 "
 
-FILES_${PN} = "\
+FILES:${PN} = "\
     ${BUNDLEDIR} \
 "
